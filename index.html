@@ -1,19 +1,22 @@
-index.html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Story Scope</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 </head>
 <body>
   <h1>Story Scope</h1>
   <textarea id="textInput" placeholder="Paste your story here..."></textarea>
   <input type="file" id="fileInput" accept=".txt,.docx">
   <button onclick="analyzeText()">Analyze</button>
+  <button onclick="analyzeWithLLM()">Get Genre & Similar Authors</button>
   <div id="results"></div>
   <canvas id="chartCanvas"></canvas>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="renderer.js"></script>
+  <canvas id="summaryPie"></canvas>
+
+  <script src="./renderer.js"></script>
 </body>
 </html>
