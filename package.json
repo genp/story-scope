@@ -1,0 +1,15 @@
+{
+    "name": "story-scope",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "devDependencies": {
+      "electron": "^27.0.0",
+      "mammoth": "^1.4.2",
+      "natural": "^6.2.3",
+      "flesch-kincaid": "^1.0.4",
+      "chart.js": "^4.4.0"
+    }
+  }
